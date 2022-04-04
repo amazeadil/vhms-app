@@ -5,6 +5,8 @@ import { DriverEnroll } from "./DriverEnroll";
 import { DpcItem } from "./DpcItem";
 import { DriverItem } from "./DriverItem";
 import { DriverManager } from "./DriverManager";
+import {VehicalList} from "./VehicalList";
+import {Vehicalitems} from "./VehicalItems";
 
 export const Home = () => {
   const [data, setData] = useState([
@@ -50,6 +52,15 @@ export const Home = () => {
       local: 3,
       long: 5,
     },
+<<<<<<< Updated upstream
+=======
+  ]);
+  const [vehdata, setVehdata] = useState([
+    "MH-26 N2517",
+    "MH-21 P3517",
+    "MH-12 2517",
+    "AP-32 7677",
+>>>>>>> Stashed changes
   ]);
   const [vehdata, setVehdata] = useState([
     "MH-26 N2202",
@@ -64,11 +75,15 @@ export const Home = () => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
+<<<<<<< Updated upstream
         <DriverManager
           driverdata={data}
           vehdata={vehdata}
           addDriver={addDriver}
         />
+=======
+        <DriverManager driverdata={data} vehdata={vehdata} />
+>>>>>>> Stashed changes
       </Grid>
     </Grid>
   );

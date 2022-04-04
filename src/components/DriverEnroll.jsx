@@ -141,12 +141,16 @@ export const DriverEnroll = ({ addDriver }) => {
           <Grid container>
             <Grid item xs={3}></Grid>
             <Grid item xs={3}>
+<<<<<<< Updated upstream
               <Button
                 variant="contained"
                 onClick={() => addDriver({ fname, lname, mname, local, long })}
               >
                 Save
               </Button>
+=======
+              <Button variant="contained">Save</Button>
+>>>>>>> Stashed changes
             </Grid>
             <Grid item xs={3}>
               <Button variant="contained" onClick={handleRemove}>
